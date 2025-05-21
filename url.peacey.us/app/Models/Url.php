@@ -6,7 +6,7 @@ class Url
     public function getLandingData()
     {
         return [
-            'title' => 'Welcome to PeaceCY.us',
+            'title' => 'Welcome to url.Peacey.us',
             'logo'  => '/assets/images/peaceySystems-logo.png',
         ];
     }
