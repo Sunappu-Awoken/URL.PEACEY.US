@@ -23,3 +23,4 @@
   # cPanel PHP-handler (don’t edit this block)
   AddHandler application/x-httpd-ea-php81 .php .php8 .phtml
 </IfModule>
+
