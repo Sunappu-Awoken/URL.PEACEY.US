@@ -1,68 +1,72 @@
 /* Global reset */
-html, body {
-	margin: 0;
-	padding: 0;
-	min-height: 100vh;
-	font-family: "Segoe UI", sans-serif;
-	background: #f5f5f5;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f5f5;
 }
 
 /* Top bar (Bootstrap navbar) */
 nav.navbar {
-	background-color: #4b0082 !important;  
+  background-color: #4b0082 !important;
 }
-
 
 /* URL Shortener Form Box */
 .appBox {
-	background: #ffffff;
-	border-radius: 0.5rem;
-	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-	padding: 2rem;
-	max-width: 700px;
-	margin: 0 auto 2rem;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
 }
 
 /* Form box margins (override above margin) */
 .appBox {
-	margin: 0 15vw;
+  margin: 0 15vw;
 }
 
 /* Placeholder text color */
 .appBox ::placeholder {
-	color: #ccc;
+  color: #ccc;
 }
 
 /* Labels */
 .appBox label {
-	display: block;
-	font-weight: 600;
-	margin-bottom: 0.25rem;
-	color: #333;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #333;
 }
 
 /* Inputs */
 .appBox .form-control {
-	width: 100%;
-	padding: 0.5rem;
-	margin-bottom: 1rem;
-	font-size: 1rem;
-	border: 1px solid #ccc;
-	border-radius: 0.25rem;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
 }
 
 /* Shorten button */
 .appBox .btn-primary {
-	display: block;
-	width: 100%;
-	padding: 0.75rem;
-	font-size: 1rem;
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
 }
 
 /*The PC URL logo */
+#topNav {
+  width: 100vw;
+  justify-content: space-between;
+}
+
 #pclogo {
-	width: 25% !important;      /* 25% of its parent container */
-	max-width: 150px !important; /* but never larger than 150px */
-	height: auto !important;     /* keep aspect ratio */
-  }
-  
+  width: 25% !important; /* 25% of its parent container */
+  max-width: 150px !important; /* but never larger than 150px */
+  height: auto !important; /* keep aspect ratio */
+}
