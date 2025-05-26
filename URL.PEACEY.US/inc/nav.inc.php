@@ -5,7 +5,7 @@ if (session_status() === PHP_SESSION_NONE) {
 ?>
 <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:#2b0155!important;">
   <div class="container-fluid">
-    <div class="ms-auto d-flex align-items-center">
+    <div id="topNav" class="ms-auto d-flex align-items-center">
       <!-- Logo always links to the public home -->
       <a href="index.php">
         <img src="https://peaceysystems.com/wp-content/uploads/2024/02/PeaceySystems_Logo25_Big-2048x356.png"
