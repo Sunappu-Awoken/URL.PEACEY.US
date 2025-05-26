@@ -1,0 +1,25 @@
+RewriteEngine On
+RewriteRule ^htaccesstest\.html$ https://www.example.com/ [R=302,L]
+
+# Turn on rewriting
+RewriteEngine On
+
+# 1) Redirect HTTP → HTTPS
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# 2) If request is for an existing file or directory, serve it directly
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# 3) Otherwise send to index.php for routing/alias lookup
+RewriteRule ^ index.php [L,QSA]
+
+# Set the “ea-php81” package as the default PHP handler
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php81 .php .php8 .phtml
+</IfModule>
+
+# Security header to upgrade any remaining insecure requests
+Header always set Content-Security-Policy "upgrade-insecure-requests;"
