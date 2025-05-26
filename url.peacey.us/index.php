@@ -4,13 +4,13 @@
 
 	$path = parse_url($_SERVER['REQUEST_URI'])['path'];
 	$path = str_replace('/', '', $path);
-	
+
 	$conn = connect_to_mysql();
 	$query = "SELECT * FROM `peacey_url` WHERE `short` = '$path'";
 	$result = mysqli_query($conn, $query) or die(mysqli_error($conn));
 
 	$num = mysqli_num_rows($result);
-	
+
 	if ($num == 1){
 		$arr = mysqli_fetch_array($result);
 		//die(json_encode($arr));
@@ -20,7 +20,7 @@
 		include 'inc/head.inc.php';
 		//include 'inc/temp_landing_placeholder.inc.php';
 	}
-	
+	//Test comment by JD
 ?>
 <style>
 	#pclogo{max-width:500px;margin-top:80px;}
